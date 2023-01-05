@@ -32,8 +32,7 @@ class ElementColourExtension extends DataExtension
 
         if ($this->owner->config()->get('inherit_config') === true) {
             $styleOpts = $this->owner->config()->get('styles');
-        }
-        else {
+        } else {
             $styleOpts = $this->owner->config()->get('styles', Config::UNINHERITED);
         }
 
@@ -51,7 +50,7 @@ class ElementColourExtension extends DataExtension
     public function updateStyleVariant(&$style)
     {
         if ($this->owner->CustomColourClass != '') {
-            $style .= ' ' . $this->owner->CustomClass;
+            $style .= $this->owner->CustomColourClass . ' ';
         }
     }
 }

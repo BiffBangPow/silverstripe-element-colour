@@ -1,6 +1,6 @@
 {
-  "name": "biffbangpow/silverstripe-extensionmodule-template",
-  "description": "A basic skeleton for a Silverstripe 4 extension module",
+  "name": "biffbangpow/silverstripe-element-colour",
+  "description": "Adds a selector to elements to allow simple styling via the CMS",
   "type": "silverstripe-vendormodule",
   "minimum-stability": "dev",
   "license": "proprietary",
@@ -16,7 +16,8 @@
   ],
   "require": {
     "silverstripe/vendor-plugin": "^1.0",
-    "silverstripe/cms": "^4"
+    "silverstripe/cms": "^4",
+    "dnadesign/silverstripe-elemental": "^4@stable || ^3@stable"
   },
   "autoload": {
     "psr-4": {

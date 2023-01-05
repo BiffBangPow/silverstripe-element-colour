@@ -1,5 +1,11 @@
-This is a basic skeleton, designed as a starting point for building Silverstripe 4 Extension modules.
+Adds a simple selector to allow CMS editors to apply CSS classes to specific elements.
 
-This does not represent a working module, just the bare-bones.   Once you have created a new repo for your module using this template, you'll need to edit (as a minimum) the composer.json file to set a name, namespace, etc.
+By default, the extension is applied to all elements when installed.  It can be disabled on a per-element class basis, via yml
 
-Code should be added in the `src`directory, following PSR autoloading guidelines for namespaces, directory structure, etc.
+If the default ElementHolder template has been overridden, it needs to contain the '$VariantStyle' tag in order for this extension to work.
+
+CSS classes are defined in yml, in a simple array which contains the classname and a friendly name for the CSS
+
+
+
+*Note:* the extension does NOT add any actual CSS for the colours.  That should be done in the application / project styles

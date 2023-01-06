@@ -8,7 +8,7 @@ CSS classes are defined in yml, in a simple array which contains the classname a
 
 ```yaml
 BiffBangPow\Extension\ElementColourExtension:
-  styles:
+  element_styles:
     "light": "Light"
     "dark": "Dark"
     "white": "White"
@@ -22,7 +22,7 @@ By default, all elements will use the styles defined by the main yml config.  If
 
 BiffBangPow\Element\VideoHeroElement:
     inherit_config: false
-    styles:
+    element_styles:
         "text-white": "White Text"
         "text-black": "Black Text"
         "text-primary": "Pink Text"

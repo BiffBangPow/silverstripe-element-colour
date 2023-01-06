@@ -18,7 +18,7 @@ class ElementColourExtension extends DataExtension
      * @config
      * @var array $styles
      */
-    private static $styles;
+    private static $element_styles;
 
     /**
      * @config
@@ -31,9 +31,9 @@ class ElementColourExtension extends DataExtension
         $fields->removeByName('CustomColourClass');
 
         if ($this->owner->config()->get('inherit_config') === true) {
-            $styleOpts = $this->owner->config()->get('styles');
+            $styleOpts = $this->owner->config()->get('element_styles');
         } else {
-            $styleOpts = $this->owner->config()->get('styles', Config::UNINHERITED);
+            $styleOpts = $this->owner->config()->get('element_styles', Config::UNINHERITED);
         }
 
         if (is_array($styleOpts)) {

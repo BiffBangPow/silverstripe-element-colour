@@ -50,7 +50,7 @@ class ElementColourExtension extends DataExtension
     public function updateStyleVariant(&$style)
     {
         if ($this->owner->CustomColourClass != '') {
-            $style .= $this->owner->CustomColourClass . ' ';
+            $style .= ' '.$this->owner->CustomColourClass . ' ';
         }
     }
 }

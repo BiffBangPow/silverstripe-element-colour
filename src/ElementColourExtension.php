@@ -5,9 +5,9 @@ namespace BiffBangPow\Extension;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\FieldList;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 
-class ElementColourExtension extends DataExtension
+class ElementColourExtension extends Extension
 {
 
     private static $db = [
